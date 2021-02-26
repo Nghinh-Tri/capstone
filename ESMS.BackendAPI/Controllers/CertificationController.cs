@@ -72,6 +72,7 @@ namespace ESMS.BackendAPI.Controllers
         public async Task<IActionResult> GetCertifications()
         {
             var certifications = await _certificationService.GetCertifications();
+            
             return Ok(certifications);
         }
     }
